@@ -13,7 +13,8 @@ body {
     display: table;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    font-size: 4.5vw;
+    font-size: 2vw;
+    background: white linear-gradient(to bottom, white, rgb(207, 207, 207)) no-repeat fixed;
 }
 
 .content {
@@ -22,7 +23,7 @@ body {
     display: table-cell;
     vertical-align: middle;
     color: rgb(57, 57, 57);
-    background: white linear-gradient(to bottom, white, rgb(207, 207, 207));
+    position: relative;
 }
 
 .icon-tray {
@@ -39,4 +40,29 @@ body {
 
 a {
     color: inherit;
+}
+
+
+@media (max-width: 575.98px) {
+    body { font-size: 4.5vw; }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body { font-size: 3vw; }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body { font-size: 2.5vw; }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body { font-size: 2vw; }
+}
+
+
+@media (min-width: 1200px) {
+    body { font-size: 2vw; }
 }
