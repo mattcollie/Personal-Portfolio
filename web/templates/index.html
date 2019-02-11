@@ -1,19 +1,33 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta name="keywords" content="matt collecutt, matt, collecutt, portfolio, developer, web developer, matthew collecutt" />
+        <meta name="description" content="Matt Collecutt's Personal website" />
+        <meta name="author" content="Matt Collecutt" />
+        <meta name="copyright" content="&copy;" />
+        <meta name="robot" content="noindex, nofollow" />
 
+        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename="images/favicon.ico") }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename="css/styles.css") }}" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-{% block content %}
+        <title>Matt Collecutt</title>
+    </head>
+    <body>
 
-<div class="content-body">
-    <h1>I'm Matt</h1>
-</div>
+        <div class="content">
+            <h1>Matt Collecutt</h1>
+            <h2>Software Engineer of {{years}} years</h2>
+            <div class="icon-tray">
+                <a target="_blank" href="https://www.linkedin.com/in/matt-collecutt/"><i class="fab fa-linkedin fa-4x"></i></a></li>
+                <a target="_blank" href="https://github.com/mattcollie"><i class="fab fa-github-square fa-4x"></i></a>
+                <a target="_blank" href="https://www.facebook.com/matt.collecutt.5"><i class="fab fa-facebook-square fa-4x"></i></a>
+                <a target="_top" href="mailto:mattcollie@live.com?Subject=Hello!"><i class="fas fa-envelope-square fa-4x"></i></a>
+            </div>
+        </div>
 
-<div class="content-body">
-    <h3>I'm a Software Developer</h3>
-</div>
-
-<div class="content-body">
-    <h3>i like cats</h3>
-</div>
-
-{% endblock %}
-
+    </body>
+</html>
